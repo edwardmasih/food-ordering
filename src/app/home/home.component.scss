@@ -1,0 +1,16 @@
+.dish-img {
+    width: 13em;
+    height: 9em;
+    object-fit: cover;
+    margin-left: 0.5em;
+}
+
+.dish-cat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish-name {
+    // display: inline-block;
+}

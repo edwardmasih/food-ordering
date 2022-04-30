@@ -1,1 +1,6 @@
-<p>home works!</p>
+<div class="dish-cat-row my-3" *ngFor="let item of this.finalMenu; index as index">
+    <span class="dish-name">{{ foodItemList[index] | uppercase }}</span>
+    <div class="">
+        <img *ngFor="let dish of item" class="dish-img" src="{{ dish.image }}" alt="">
+    </div>
+</div>
