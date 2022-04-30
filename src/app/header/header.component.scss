@@ -5,15 +5,16 @@ header {
 }
 
 .container {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
 .logo {
     font-weight: bold;
+    padding: 1em;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 1em;;
 }
