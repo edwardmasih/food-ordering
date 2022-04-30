@@ -1,0 +1,19 @@
+header {
+  background-color: white;
+  padding: 0;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
