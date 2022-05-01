@@ -5,19 +5,26 @@
   flex-wrap: wrap;
 }
 
-.dish-container {
-  width: inherit;
-  height: inherit;
+// .dish-container {
+//   width: inherit;
+//   height: inherit;
+// }
+
+.dishCard {
+  border: 1px solid #cecece;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 
 .dish-img {
   width: 14rem;
-  height: 11rem;
+  height: 12rem;
   object-fit: cover;
-  margin-left: 0.5rem;
-  border-radius: 1rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
   &:hover {
     opacity: 0.9;
     cursor: pointer;
   }
 }
+

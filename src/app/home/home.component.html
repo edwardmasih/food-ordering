@@ -1,8 +1,21 @@
 <div class="dish-cat-row my-3" *ngFor="let item of this.finalMenu; index as index">
     <!-- <div class="dish-name">{{ foodItemList[index] | uppercase }}</div> -->
-    <div class="dish-container"  *ngFor="let dish of item">
+    <!-- <div class="dish-container"  *ngFor="let dish of item; index as dishNo">
         <a href="">
-            <img class="dish-img" src="{{ dish }}" alt="">
+            <img class="dish-img" src="{{ dish }}" alt="{{foodItemList[index]}}-{{dishNo+1}}">
         </a>
-    </div>
+        <div class="dish-detail">
+            {{foodItemList[index]}} {{dishNo+1}}
+        </div>
+    </div> -->
+
+
+    <div class="dishCard" *ngFor="let dish of item; index as dishNo" >
+        <img class="dish-img" src="{{ dish }}" alt="{{ foodItemList[index] }}-{{ dishNo + 1 }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ foodItemList[index] }} {{ dishNo + 1 }}</h5>
+          <p class="card-text">Food Description.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
 </div>
