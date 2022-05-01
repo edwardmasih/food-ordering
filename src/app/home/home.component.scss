@@ -1,17 +1,23 @@
-.dish-img {
-    width: 13em;
-    height: 9em;
-    object-fit: cover;
-    margin-left: 0.5em;
-    border-radius: 1em;
-}
-
 .dish-cat-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.dish-name {
-    // display: inline-block;
+.dish-container {
+  width: inherit;
+  height: inherit;
+}
+
+.dish-img {
+  width: 14rem;
+  height: 11rem;
+  object-fit: cover;
+  margin-left: 0.5rem;
+  border-radius: 1rem;
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
 }

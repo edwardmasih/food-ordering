@@ -16,21 +16,27 @@ export class FoodService {
   public foodItem = [
     'biryani',
     'burger',
-    'butter-chicken',
     'dessert',
-    'dosa',
-    'idly',
     'pasta',
-    'pizza',
-    'rice',
-    'samosa',
+    'pizza'
   ];
 
+  // gets random images of food item using specific food name 
+  // Github : Foodish
   getFoodImage(foodName: any): Observable<any> {
     return this.http.get(this.foodImagesAPI+foodName).pipe(
       catchError((error: HttpErrorResponse) => {
         throw new Error(error.error);
       })
     );
+  }
+
+  getAllFood(foodName:any):string[]{
+    return [
+      `/assets/images/${foodName}/${foodName}-1.jpg`,
+      `/assets/images/${foodName}/${foodName}-2.jpg`,
+      `/assets/images/${foodName}/${foodName}-3.jpg`,
+      `/assets/images/${foodName}/${foodName}-4.jpg`
+    ]
   }
 }
