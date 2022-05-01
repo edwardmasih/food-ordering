@@ -14,6 +14,13 @@
   border: 1px solid #cecece;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
+  .favPill {
+    font-size: xx-small;
+    text-align: center;
+    position: absolute;
+    // left: 5rem;
+    
+  }
 }
 
 .dish-img {
@@ -27,4 +34,3 @@
     cursor: pointer;
   }
 }
-

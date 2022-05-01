@@ -11,10 +11,15 @@
 
 
     <div class="dishCard" *ngFor="let dish of item; index as dishNo" >
-        <img class="dish-img" src="{{ dish }}" alt="{{ foodItemList[index] }}-{{ dishNo + 1 }}">
+        <div class="d-flex flex-row-reverse">
+            <span class="btn btn-warning favPill" *ngIf="dish.favorite">favorite!</span>
+        </div>
+        <img class="dish-img" src="{{ dish.imageUrl }}" alt="{{ dish.name }}">
         <div class="card-body">
-          <h5 class="card-title">{{ foodItemList[index] }} {{ dishNo + 1 }}</h5>
-          <p class="card-text">Food Description.</p>
+          <h5 class="card-title">{{ dish.name }}</h5>
+          <p class="card-text mb-0">Price - {{ dish.price }}</p>
+          <ngb-rating [rate]="dish.star" [max]="5" class="mb-3"></ngb-rating>
+          <br>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
