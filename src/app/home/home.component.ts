@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
     for (let i = 0; i < this.foodItemList.length; i++) {
       this.finalMenu[i] = []
-      for (let j = 0; j < 5; j++) {
+      for (let j = 0; j < 4; j++) {
         this.foodService.getFoodImage(this.foodItemList[i]).subscribe(data => {
           // console.log(data)
           this.finalMenu[i].push(data)

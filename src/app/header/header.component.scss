@@ -10,11 +10,15 @@ header {
 }
 
 .logo {
-    font-weight: bold;
-    padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-nav ul {
+nav {
+  ul {
     list-style-type: none;
-    padding: 1em;;
+    li a {
+      text-decoration: none;
+    }
+  }
 }
