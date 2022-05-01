@@ -12,14 +12,19 @@
 
 .dishCard {
   border: 1px solid #cecece;
+  &:hover {
+    box-shadow: 5px 6px #888888;
+  }
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   .favPill {
+    height: 1.2rem;
     font-size: xx-small;
     text-align: center;
-    position: absolute;
+    padding: 2px;
+    vertical-align: center;
+    // position: absolute;
     // left: 5rem;
-    
   }
 }
 
@@ -33,4 +38,8 @@
     opacity: 0.9;
     cursor: pointer;
   }
+}
+
+.seeMore {
+  font-size: small;
 }
