@@ -11,6 +11,10 @@ const routes: Routes = [
     path: 'search/:searchItem',
     component: HomeComponent,
   },
+  // {
+  //   path: 'no-dish-found',
+  //   component: HomeComponent,
+  // },
 ];
 
 @NgModule({

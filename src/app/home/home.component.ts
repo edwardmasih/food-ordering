@@ -47,6 +47,12 @@ export class HomeComponent implements OnInit {
         });
       }
     }
-    console.log(this.finalMenu);
+    
+    // when searching, it will not create empty list of food category
+    this.finalMenu = this.finalMenu.filter( (ele:[]) => {
+      return ele.length != 0;
+    });
+
+    console.log("Final List" , this.finalMenu);
   }
 }

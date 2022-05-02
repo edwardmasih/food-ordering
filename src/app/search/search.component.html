@@ -1,0 +1,6 @@
+<nav class="d-flex flex-row-reverse navbar navbar-light bg-light search">
+    <form class="form-inline d-flex" (submit)="search()">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" [(ngModel)]="searchItem" [ngModelOptions]="{standalone: true}">
+        <button class="btn btn-outline-success my-2 my-sm-0 ml-2" [disabled]="searchItem.length==0" type="submit">Search</button>
+    </form>
+</nav>

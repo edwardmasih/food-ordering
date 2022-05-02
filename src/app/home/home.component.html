@@ -1,3 +1,4 @@
+<app-search></app-search>
 <div class="dish-cat-row my-3" *ngFor="let item of this.finalMenu; index as index">
     <!-- <div class="dish-name">{{ foodItemList[index] | uppercase }}</div> -->
     <!-- <div class="dish-container"  *ngFor="let dish of item; index as dishNo">
@@ -8,19 +9,17 @@
             {{foodItemList[index]}} {{dishNo+1}}
         </div>
     </div> -->
-
-
-    <div class="dishCard" *ngFor="let dish of item; index as dishNo" >
+    <div class="dishCard" *ngFor="let dish of item; index as dishNo">
         <img class="dish-img" src="{{ dish.imageUrl }}" alt="{{ dish.name }}">
         <div class="card-body">
             <div class="d-flex justify-content-between align-items-center mb-2">
                 <h5 class="card-title mb-0">{{ dish.name }}</h5>
                 <span class="btn btn-warning favPill" *ngIf="dish.favorite">favorite!</span>
             </div>
-          <p class="card-text mb-0">₹ {{ dish.price }}</p>
-          <ngb-rating [rate]="dish.star" [max]="5" class="mb-3" [readonly]="true"></ngb-rating>
-          <br>
-          <a href="#" class="btn btn-primary seeMore">see more</a>
+            <p class="card-text mb-0">₹ {{ dish.price }}</p>
+            <ngb-rating [rate]="dish.star" [max]="5" class="mb-3" [readonly]="true"></ngb-rating>
+            <br>
+            <a href="#" class="btn btn-primary seeMore">see more</a>
         </div>
-      </div>
+    </div>
 </div>
